@@ -1,0 +1,157 @@
+ADMIN@DESK99 MINGW64 /d/git-training (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   ex1_calculator.py
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+ADMIN@DESK99 MINGW64 /d/git-training (master)
+$ git checkout ex1_calculator.py
+Updated 1 path from the index
+
+ADMIN@DESK99 MINGW64 /d/git-training (master)
+$ git checkout .
+Updated 0 paths from the index
+
+ADMIN@DESK99 MINGW64 /d/git-training (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+ADMIN@DESK99 MINGW64 /d/git-training (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ex3_samplecount.py
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+ADMIN@DESK99 MINGW64 /d/git-training (master)
+$ git commit -m "add ex3 file with code"
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ex3_samplecount.py
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+ADMIN@DESK99 MINGW64 /d/git-training (master)
+$ git add .
+
+ADMIN@DESK99 MINGW64 /d/git-training (master)
+$ ll
+total 7
+-rw-r--r-- 1 ADMIN 197121 1698 Apr  5 21:43 ex1_calculator.py
+-rw-r--r-- 1 ADMIN 197121  349 Apr  5 21:32 ex1_forloop.py
+-rw-r--r-- 1 ADMIN 197121  672 Apr  5 21:29 ex2_dfuntion.py
+-rw-r--r-- 1 ADMIN 197121  524 Apr  5 21:47 ex3_samplecount.py
+
+ADMIN@DESK99 MINGW64 /d/git-training (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   ex3_samplecount.py
+
+
+ADMIN@DESK99 MINGW64 /d/git-training (master)
+$ git log --oneline
+35d716b (HEAD -> master) 3rd commit with code edit
+48eb9da 2nd commit with calc
+c7f69a9 1st Commit
+
+ADMIN@DESK99 MINGW64 /d/git-training (master)
+$ git commit -am "4th commit add ex3 file with code"
+[master 0ff87f1] 4th commit add ex3 file with code
+ 1 file changed, 22 insertions(+)
+ create mode 100644 ex3_samplecount.py
+
+ADMIN@DESK99 MINGW64 /d/git-training (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+ADMIN@DESK99 MINGW64 /d/git-training (master)
+$ git log --oneline
+0ff87f1 (HEAD -> master) 4th commit add ex3 file with code
+35d716b 3rd commit with code edit
+48eb9da 2nd commit with calc
+c7f69a9 1st Commit
+
+ADMIN@DESK99 MINGW64 /d/git-training (master)
+$ history
+    1  ls
+    2  cd D:
+    3  ll
+    4  mkdir git-training
+    5  ll
+    6  chmod -R 777 git-training/
+    7  ll
+    8  cd git-training/
+    9  ll
+   10  git init
+   11  touch ex1-forloop.py
+   12  touch ex2-dfunction.py
+   13  ls-la
+   14  ls -la
+   15  cd ..
+   16  ll
+   17  chmod -R 777 git-training/
+   18  cd git-training/
+   19  ll
+   20  code git-training
+   21  git status
+   22  ll
+   23  git --help
+   24  ll
+   25  rm -rf git-training
+   26  ll
+   27  git add ex1-forloop.py ex2-dfunction.py
+   28  ll
+   29  git status
+   30  git commit -am "1st Commit"
+   31  git config --global user.name "Yash.Dev"
+   32  git config -- global user.email "1yashwantsingh@gmail.com"
+   33  git config --global user.email "1yashwantsingh@gmail.com"
+   34  git config --global user.email
+   35  git status
+   36  git commit -am "1st Commit"
+   37  git log
+   38  git log --oneline
+   39  git status
+   40  clear
+   41  ll
+   42  git status
+   43  git add .
+   44  git status
+   45  git commit -m "3rd commit with code edit"
+   46  git log --oneline
+   47  git push
+   48  ll
+   49  clear
+   50  git checkout ex1_forloop.py
+   51  git checkout ex1_calculator.py
+   52  vi ex1_calculator.py
+   53  cat ext1_calculator.py
+   54  ll
+   55  leaf ex1_calculator.py
+   56  cat ex1_calculator.py
+   57  clear
+   58  git status
+   59  git checkout ex1_calculator.py
+   60  git checkout .
+   61  git status
+   62  git status
+   63  git commit -m "add ex3 file with code"
+   64  git add .
+   65  ll
+   66  git status
+   67  git log --oneline
+   68  git commit -am "4th commit add ex3 file with code"
+   69  git status
+   70  git log --oneline
+   71  history
