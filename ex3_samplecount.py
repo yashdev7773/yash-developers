@@ -20,3 +20,4 @@ n = n - 1
 print()
 
 print("Added this file and code, for 3rd commit")
+print("Message to check .gitignore file")

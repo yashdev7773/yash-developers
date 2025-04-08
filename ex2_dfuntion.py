@@ -14,3 +14,4 @@ print("The program ran successfully")
 print("first modification for 2nd commit")
 #
 print("Added to see checkout is safe")
+print("Message to check .gitignore file")
